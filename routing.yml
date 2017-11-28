@@ -38,7 +38,7 @@ global_gateway:
     - jettison-proxy.tropo.com
   accounts:
     5054040:
-      _comment: qacloud1 account
+      _comment: "qacloud1 account"
       sms:
         url: sip-production-wdc.tropo.com
       sip:
@@ -46,7 +46,7 @@ global_gateway:
       http:
         url: https://api-production-wdc.tropo.com
     5002347:
-      _comment: qa_staging_wdc account
+      _comment: "qa_staging_wdc account"
       sms:
         url: sip-production-wdc.tropo.com
       sip:
