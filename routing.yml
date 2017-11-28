@@ -61,64 +61,7 @@ global_gateway:
   networks:
     '10.160.62.64/26':
       url: https://api-staging-sjc.tropo.com
-      _comment: 'subnetID: 1207983 - sjc03-shared-staging'
+      _comment: ''subnetID: 1207983 - sjc03-shared-staging''
     '10.168.49.192/26':
       url: https://api-production-sjc.tropo.com
-      _comment: 'subnetID: 1212931 - sjc03-shared-production'
-    '10.160.37.128/26':
-      url: https://api-enterprise-sjc.tropo.com
-      _comment: SJC Ent
-    '169.50.65.72/29':
-      url: https://api-staging-lon.tropo.com
-      _comment: LON
-    '169.50.94.0/28':
-      url: https://api-production-lon.tropo.com
-      _comment: LON
-    '169.44.130.64/27':
-      url: https://api-production-sjc.tropo.com
-      _comment: SJC
-    '169.45.78.208/29':
-      url: https://api-staging-sjc.tropo.com
-      _comment: SJC
-    '169.45.121.96/27':
-      url: https://api-enterprise-sjc.tropo.com
-      _comment: SJC Ent
-    '169.47.53.224/27':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc04.fcr03a.898-1462669-rt_prod_public
-    '169.47.52.200/29':
-      url: https://api-alpha-wdc.tropo.com
-      _comment: wdc04.fcr03a.904-1462677-rt_alpha_public
-    '169.47.40.24/29':
-      url: https://api-staging-wdc.tropo.com
-      _comment: wdc04.fcr03a.902-1462673-rt_dev_public
-    '10.149.188.0/27':
-      url: https://api-cctg-production-wdc.tropo.com
-      _comment: wdc04.fcr03a.877-1462673-rt_cisco_private
-    '169.47.46.208/28':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc04.fcr03a.877-1462645-rt_cisco_public
-    '198.11.254.96/27':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc01.fcr05a.1510-574532.public
-    '158.85.28.0/27':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc01.fcr05a.1510-574532.public
-    '10.108.181.0/26':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc01.bcr05a.1963-775290-private
-    '10.108.198.64/26':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc01.bcr05a.1696-574156-private
-    '10.149.190.128/28':
-      url: https://api-alpha-wdc.tropo.com
-      _comment: wdc04.bcr03a.1102-1462693-rt_alpha_private
-    '10.149.188.0/27':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc04.bcr03a.996-1462681-rt_cisco_private
-    '10.170.215.128/28':
-      url: https://api-staging-wdc.tropo.com
-      _comment: wdc04.bcr03a.1000-1462689-rt_dev_private
-    '10.149.190.64/26':
-      url: https://api-production-wdc.tropo.com
-      _comment: wdc04.bcr03a.998-1462685-rt_prod_private
+      _comment: ''subnetID: 1212931 - sjc03-shared-production''
