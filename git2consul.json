@@ -1,6 +1,7 @@
 {
   "version": "1.0",
   "repos" : [{
+    "expand_keys" : true,
     "name" : "gateway",
     "url" : "https://github.com/johntdyer/git2consul-testing.git",
     "branches" : ["dev"],
