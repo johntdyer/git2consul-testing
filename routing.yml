@@ -59,9 +59,9 @@ global_gateway:
       sip: sip-production-sjc.tropo.com
       http: https://api-enterprise-sjc.tropo.com
   networks:
-    '10.160.62.64/26':
+    10.160.62.64/26:
       url: https://api-staging-sjc.tropo.com
       _comment: 'subnetID: 1207983 - sjc03-shared-staging'
-    '10.168.49.192/26':
+    10.168.49.192/26:
       url: https://api-production-sjc.tropo.com
       _comment: 'subnetID: 1212931 - sjc03-shared-production'
