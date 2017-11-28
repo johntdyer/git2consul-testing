@@ -17,8 +17,6 @@ global_gateway:
           url: sip-production-wdc.tropo.com
         http:
           url: https://api-production-wdc.tropo.com
-
-  accounts:
     - 5002347:
         _comment: qa_staging_wdc account
         sms:
@@ -27,7 +25,6 @@ global_gateway:
           url: sip-production-wdc.tropo.com
         http:
           url: https://api-production-wdc.tropo.com
-
   ppids:
     - 25:
         sms: sip-production-sjc.tropo.com
