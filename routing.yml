@@ -58,6 +58,10 @@ global_gateway:
       sms: sip-production-sjc.tropo.com
       sip: sip-production-sjc.tropo.com
       http: https://api-enterprise-sjc.tropo.com
+    410:
+      sms: sip-production-sjc.tropo.com
+      sip: sip-production-sjc.tropo.com
+      http: https://api-enterprise-sjc.tropo.com
   networks:
     10.160.62.64/26:
       url: https://api-staging-sjc.tropo.com
