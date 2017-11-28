@@ -30,3 +30,31 @@ global_gateway:
         sms: sip-production-sjc.tropo.com
         sip: sip-production-sjc.tropo.com
         http: https://api-enterprise-sjc.tropo.com
+  responsible_domains:
+    - sip.tropo.com
+    - tropo1.3ccloud.com
+    - sip-trunk.tropo.com
+    - global-gateway.tropo.com
+    - global-gateway-east.tropo.com
+    - global-gateway-west.tropo.com
+    - sip-trunk-global-bandwidth.tropo.com
+    - sip-trunk-global-voxbone.tropo.com
+    - sip-trunk-global-bandwidth.rel.tropo.com
+    - sip-trunk-global-voxbone.rel.tropo.com
+    - ggw1-east-prod-i.aws.tropo.com
+    - ggw2-east-prod-i.aws.tropo.com
+    - ggw1-west-prod-i.aws.tropo.com
+    - ggw2-west-prod-i.aws.tropo.com
+    - sip-trunk-jettison.tropo.com
+    - sip-trunk-voxbone.tropo.com
+    - sip-trunk-ipeer.tropo.com
+    - sip-trunk-tata.tropo.com
+    - sip-trunk-bandwidth.tropo.com
+    - sip-trunk-telesmart.tropo.com
+    - sip-trunk-bcbs.tropo.com
+    - sip-bcbs.tropo.com
+    - sip-proxy.tropo.com
+    - sip-proxy-east.tropo.com
+    - sip-proxy-west.tropo.com
+    - sip-noproxy.tropo.com
+    - jettison-proxy.tropo.com
