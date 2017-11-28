@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "repos" : [{
+    "name" : "gateway",
+    "url" : "https://github.com/johntdyer/git2consul-testing.git",
+    "branches" : ["dev"],
+    "hooks": [{
+      "type" : "polling",
+      "interval" : "1"
+    }]
+  }]
+}
