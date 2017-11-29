@@ -1,13 +1,44 @@
 global_gateway:
-  interval: 30
+################################
   primary:
     sms: wdc
     sip: sjc
     http: sjc
-  default_gateway:
-    sip: sip-production-wdc.tropo.com
-    sms: sip-production-wdc.tropo.com
-    http: api-production-wdc.tropo.com
+################################
+  interval: 30
+  accounts:
+    5054040:
+      _comment: "qacloud1 account"
+      sms:
+        url: sip-production-wdc.tropo.com
+      sip:
+        url: sip-production-wdc.tropo.com
+      http:
+        url: https://api-production-wdc.tropo.com
+    5002347:
+      _comment: "qa_staging_wdc account"
+      sms:
+        url: sip-production-wdc.tropo.com
+      sip:
+        url: sip-production-wdc.tropo.com
+      http:
+        url: https://api-production-wdc.tropo.com
+  ppids:
+    # 25:  # testing ppids
+    #   sms: sjc
+    #   sip: sjc
+    #   http: sjc
+    # 410:  # Shared Staging, only need to uncomment if we're changing it from the default
+    #   sms: sjc
+    #   sip: sjc
+    #   http: sjc
+  networks:
+    10.160.62.64/26:
+      url: https://api-staging-sjc.tropo.com
+      _comment: 'subnetID: 1207983 - sjc03-shared-staging'
+    10.168.49.192/26:
+      url: https://api-production-sjc.tropo.com
+      _comment: 'subnetID: 1212931 - sjc03-shared-production'
   responsible_domains:
     - sip.tropo.com
     - tropo1.3ccloud.com
@@ -36,151 +67,3 @@ global_gateway:
     - sip-proxy-west.tropo.com
     - sip-noproxy.tropo.com
     - jettison-proxy.tropo.com
-  accounts:
-    5054040:
-      _comment: "qacloud1 account"
-      sms:
-        url: sip-production-wdc.tropo.com
-      sip:
-        url: sip-production-wdc.tropo.com
-      http:
-        url: https://api-production-wdc.tropo.com
-    5002347:
-      _comment: "qa_staging_wdc account"
-      sms:
-        url: sip-production-wdc.tropo.com
-      sip:
-        url: sip-production-wdc.tropo.com
-      http:
-        url: https://api-production-wdc.tropo.com
-  ppids:
-    # 25:  # testing ppids
-    #   sms: sjc
-    #   sip: sjc
-    #   http: sjc
-    # 410:  # Shared Staging, only need to uncomment if we're changing it from the default
-    #   sms: sjc
-    #   sip: sjc
-    #   http: sjc
-    static_ppids:
-      25:
-        _comment: "[INTERNAL-USE-ONLY] - Operations test env"
-        sms:
-          url: sip-production-sjc.tropo.com
-        sip:
-          url: sip-enterprise-sjc.tropo.com
-        http:
-          url: https://api-enterprise-sjc.tropo.com
-      502:
-        _comment: "[INTERNAL-USE-ONLY] - ALPHA"
-        sms:
-          url: sip-alpha-wdc.tropo.com
-        sip:
-          url: sip-alpha-wdc.tropo.com
-        http:
-          url: https://api-alpha-wdc.tropo.com
-      1139:
-        _comment: "[INTERNAL-USE-ONLY] - WDC Production"
-        sms:
-          url: sip-production-wdc.tropo.com
-        sip:
-          url: sip-production-wdc.tropo.com
-        http:
-          url: https://api-production-wdc.tropo.com
-      1141:
-        _comment: "[INTERNAL-USE-ONLY] - WDC Development"
-        sms:
-          url: sip-staging-wdc.tropo.com
-        sip:
-          url: sip-staging-wdc.tropo.com
-        http:
-          url: https://api-staging-wdc.tropo.com
-      1144:
-        _comment: EU Shared Production
-        sms:
-          url: sip-production-lon.tropo.com
-        sip:
-          url: sip-production-lon.tropo.com
-        http:
-          url: https://api-production-lon.tropo.com
-      1145:
-        _comment: EU Shared Development
-        sms:
-          url: sip-staging-lon.tropo.com
-        sip:
-          url: sip-staging-lon.tropo.com
-        http:
-          url: https://api-staging-lon.tropo.com
-      1147:
-        _comment: "[INTERNAL-USE-ONLY] - SJC Production"
-        sms:
-          url: sip-production-sjc.tropo.com
-        sip:
-          url: sip-production-sjc.tropo.com
-        http:
-          url: https://api-production-sjc.tropo.com
-      1149:
-        _comment: "[INTERNAL-USE-ONLY] - SJC Development"
-        sms:
-          url: sip-staging-sjc.tropo.com
-        sip:
-          url: sip-staging-sjc.tropo.com
-        http:
-          url: https://api-staging-sjc.tropo.com
-      1154:
-        _comment: "[INTERNAL-USE-ONLY] - SJC Enterprise"
-        sms:
-          url: sip-production-sjc.tropo.com
-        sip:
-          url: sip-enterprise-sjc.tropo.com
-        http:
-          url: https://api-enterprise-sjc.tropo.com
-      1155:
-        _comment: "[INTERNAL-USE-ONLY] - WDC Enterprise"
-        sms:
-          url: sip-production-wdc.tropo.com
-        sip:
-          url: sip-enterprise-wdc.tropo.com
-        http:
-          url: https://api-enterprise-wdc.tropo.com
-      1158:
-        _comment: "[INTERNAL-USE-ONLY] - WDC Fiserv Production"
-        sms:
-          url: sip-production-wdc.tropo.com
-        sip:
-          url: sip-production-wdc.tropo.com
-        http:
-          url: https://api-production-wdc.tropo.com
-      1159:
-        _comment: "[INTERNAL-USE-ONLY] - SJC Fiserv Production"
-        sms:
-          url: sip-production-sjc.tropo.com
-        sip:
-          url: sip-production-sjc.tropo.com
-        http:
-          url: https://api-production-sjc.tropo.com
-      1162:
-        _comment: "[INTERNAL-USE-ONLY] - SJC CCTG Production"
-        sms:
-          url: sip-production-sjc.tropo.com
-        sip:
-          url: sip-cctg-production-sjc.tropo.com
-        http:
-          url: https://api-production-sjc.tropo.com
-      1163:
-        _comment: "[INTERNAL-USE-ONLY] - WDC CCTG Production"
-        sms:
-          url: sip-production-wdc.tropo.com
-        sip:
-          url: sip-cctg-production-wdc.tropo.com
-        http:
-          url: https://api-production-wdc.tropo.com
-  networks:
-    10.160.62.64/26:
-      url: https://api-staging-sjc.tropo.com
-      _comment: 'subnetID: 1207983 - sjc03-shared-staging'
-    10.168.49.192/26:
-      url: https://api-production-sjc.tropo.com
-      _comment: 'subnetID: 1212931 - sjc03-shared-production'
-  staging:
-    sms: sip-production-sjc.tropo.com
