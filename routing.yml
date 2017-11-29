@@ -58,7 +58,7 @@ global_gateway:
       sms: sip-production-sjc.tropo.com
       sip: sip-production-sjc.tropo.com
       http: https://api-enterprise-sjc.tropo.com
-    410:
+    staging:
       sms: sip-production-sjc.tropo.com
       sip: sip-production-sjc.tropo.com
       http: https://api-enterprise-sjc.tropo.com

@@ -1,6 +1,0 @@
----
-first_level:
-  second_level:
-    third_level:
-      my_key: my_value
-      my_other_key: other_value
