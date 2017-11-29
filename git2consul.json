@@ -3,6 +3,7 @@
   "repos" : [{
     "expand_keys" : true,
     "name" : "gateway",
+    "ignore_file_extension" : true,
     "url" : "https://github.com/johntdyer/git2consul-testing.git",
     "branches" : ["dev"],
     "hooks": [{
